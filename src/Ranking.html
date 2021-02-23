@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rankig</title>
+    <link rel="stylesheet" href="fonts/style.css">
+
+    <style>
+        table,th, td{
+            border-bottom: 2px solid black;
+            border-collapse: collapse;
+        }
+        #t1 tr:nth-child(2n+3){
+            background-color: #eee;
+        }
+        th,td{
+            padding: 20px;
+        }
+
+        th{
+            font-size: 20px;
+        }
+        td{
+            font-size: 120%;
+        }
+        .titolSize{
+
+            font-size: 30px;
+        }
+        .greenColor{
+
+            color: #228b22;
+        }
+        .redColor{
+
+            color: #b22222;
+        }
+        th:nth-child(1),td:nth-child(1){
+
+            border-left: 2px solid black;
+        }
+        th:nth-child(4),td:nth-child(4){
+
+            border-right: 2px solid black;
+        }
+        .icon-arrow-down{
+
+            color: firebrick;
+        }
+        .taulaPrincipal{
+
+            width: 50%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .titol{
+            border: 2px solid black;
+        }
+
+    </style>
+</head>
+<body>
+<h1 align="center">Aquest es el ranking de llenguatges de programació del 2021</h1>
+
+<p align="center">Aqui vos mostrare quins són els millors del llenguatges de programació,
+    i perque son els més usats en el 2021. <strong>Vos ho recoman!</strong></p>
+
+<table class="taulaPrincipal" id="t1">
+    <tr>
+        <th colspan="4" class="titolSize titol">
+            Ranking de llenguatges de programació 2021</th>
+    </tr>
+    <tr>
+        <th><n>Posicio</n></th>
+        <th><n>Nom Llenguatge</n></th>
+        <th><n>Popularitat%</n></th>
+        <th><n>Logotip</n></th>
+    </tr>
+    <tr>
+        <td align="right">1</td>
+        <td align="left">C</td>
+        <td align="right" class="greenColor"><span class="icon-arrow-up">17.38%</span></td>
+        <td align="center"><img src="Imagenes/C.png" alt="C" width="100" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td align="left">Java</td>
+        <td align="right" class="icon-arrow-down"><span class="greenColor">11.96%</span></td>
+        <td align="center"><img src="Imagenes/java.jpg" alt="Java" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td align="left">Python</td>
+        <td align="right" class="greenColor">11.72%</td>
+        <td align="center"><img src="Imagenes/Python.jpg" alt="Python" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">4</td>
+        <td align="left">C++</td>
+        <td align="right" class="greenColor">7.56%</td>
+        <td align="center"><img src="Imagenes/C++.png" alt="C++" width="100" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">5</td>
+        <td align="left">C#</td>
+        <td align="right" class="redColor">3.95%</td>
+        <td align="center"><img src="Imagenes/csharp.png" alt="C#" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">6</td>
+        <td align="left">Visual Basic</td>
+        <td align="right" class="redColor">3.84%</td>
+        <td align="center"><img src="Imagenes/Visual_Basic.jpg" alt="Visual Basic" width="100" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right">7</td>
+        <td align="left">JavaScript</td>
+        <td align="right" class="redColor">2.20%</td>
+        <td align="center"><img src="Imagenes/javascript.jpg" alt="JavaScript" width="150" height="100"></td>
+    </tr>
+    <tr>
+        <td align="right" >8</td>
+        <td align="left">PHP</td>
+        <td align="right" class="redColor">1.99%</td>
+        <td align="center"><img src="Imagenes/php.png" alt="PHP" width="150" height="100"></td>
+    </tr>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/Layout.css" rel="stylesheet">
+    <title>Title</title>
+</head>
+<body>
+<style>
+
+  *{
+    box-sizing: border-box;
+  }
+  .principal{
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+  ;
+  }
+  h2,h3{
+    margin-left: 1%;
+  }
+  .principal::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .parrafos{
+    float: left;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 3%;
+    text-align: justify;
+  }
+  .enFila{
+    float: left;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    margin-bottom: 2%;
+  }
+  .enFilaConBorde{
+    float: left;
+    border: 1px solid black;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    padding: 0.4%;
+  }
+  [class*="col-"]{
+  }
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 24%;}
+  .col-4 {width: 32%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 48%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 65%;}
+  .col-9 {width: 72%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 98%;}
+  .col-12 {width: 100%;}
+
+</style>
+
+<div class="principal col-10">
+
+    <h2>Secció principal de la pàgina</h2>
+    <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
+        montes ante mi tincidunt primis justo convallis,
+        et varius nec massa curabitur tristique pellentesque vitae,
+        tempor cum mauris nibh dapibus accumsan.
+        Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
+        sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
+        taciti nascetur donec id conubia cras dis lobortis.
+        Phasellus mus odio pellentesque luctus mauris ultrices a neque,
+        non class fermentum sollicitudin dignissim nec orci gravida,
+        nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
+    <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
+        montes ante mi tincidunt primis justo convallis,
+        et varius nec massa curabitur tristique pellentesque vitae,
+        tempor cum mauris nibh dapibus accumsan.
+        Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
+        sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
+        taciti nascetur donec id conubia cras dis lobortis.
+        Phasellus mus odio pellentesque luctus mauris ultrices a neque,
+        non class fermentum sollicitudin dignissim nec orci gravida,
+        nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
+
+    <h3>Formulari</h3>
+
+    <div class="enFila col-4"><form>
+        <label for="dni">DNI:</label><br>
+        <input class="col-12" type="text" id="dni"name="dni" value="98765432X">
+    </form></div>
+    <div class="enFila col-8"><form>
+        <label for="correu">Correu electrònic:</label><br>
+        <input class="col-12" type="email" id="correu" name="correu" value="pacocastanyes@gmail.com">
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label for="pnom">Nom:</label><br>
+        <input class="col-12" type="text" id="pnom" name="pnom" value="Fulano">
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label for="l1">Llinatge 1:</label><br>
+        <input class="col-12" type="text" id="l1" name="l1" value="Detal">
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label for="l2">Llinatge 2:</label><br>
+        <input class="col-12" type="text" id="l2" name="l2" value="Iqual">
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label>Gènere:</label><br>
+        <input type="radio" id="home" name="genere" value="home">
+        <label for="home">Home</label>
+        <input type="radio" id="dona" name="genere" value="dona">
+        <label for="dona">Dona</label>
+        <input type="radio" id="altres" name="genere" value="altres">
+        <label for="altres">Altres</label>
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label for="fNaixement">Data Naixement</label><br>
+        <input class="col-12" type="date" id="fNaixement" name="fNaixement" min="1950-01-01"><br>
+    </form></div>
+    <div class="enFila col-4"><form>
+        <label for="nEstudis">Nivell d'estudis:</label><br>
+        <select class="col-12" id="nEstudis" name="nestudis">
+            <option value="eso">ESO</option>
+            <option value="batxillerat">Batxillerat</option>
+            <option value="gMitja">Grau Mitja</option>
+            <option value="gSuperior">Grau Superior</option>
+            <option value="universitat">Universitat</option>
+        </select>
+    </form></div>
+    <div class="enFila col-8"><form>
+        <label>Aficcions:</label><br>
+        <input type="checkbox" id="surf" name="surf" value="Surf">
+        <label for="surf">Surf</label>
+        <input type="checkbox" id="escacs" name="escacs" value="Escacs">
+        <label for="escacs">Escacs</label>
+        <input type="checkbox" id="basket" name="basket" value="Basket">
+        <label for="basket">Basket</label>
+        <input type="checkbox" id="e-sports" name="e-sports" value="E-sports">
+        <label for="e-sports">E-sports</label>
+        <input type="checkbox" id="dormir" name="dormir" value="Dormir">
+        <label for="dormir">Dormir</label>
+        <input type="checkbox" id="legir" name="llegir" value="Llegir">
+        <label for="legir">Llegir</label>
+        <input type="checkbox" id="dibuixar" name="dibuixar" value="Dibuixar">
+        <label for="dibuixar">Dibuixar</label>
+        <input type="checkbox" id="musica" name="musica" value="Música">
+        <label for="musica">Música</label>
+    </form></div>
+    <div class="enFila col-12"><form>
+        <label for="pAprovar">Probabilitat d'aprovar 0 - 100:</label><br>
+        <input class="col-11" type="range" id="pAprovar" name="pAprovar" min="0" max="100">
+    </form></div>
+
+</div>
+
+</body>
+</html>
