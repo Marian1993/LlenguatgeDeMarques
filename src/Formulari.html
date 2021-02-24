@@ -32,7 +32,7 @@
   }
   .enFila{
     float: left;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
 
   input[type="submit"]{
@@ -40,11 +40,8 @@
       border-style: solid;
       border-color:  fuchsia;
   }
-  input{
+  input, label{
       width: 100%;
-  }
-  input[type="radio"], input[name="genere"]{
-      float: left;
   }
 
   .row::after {
@@ -125,7 +122,7 @@
         <input type="text" id="l2" name="l2" value="Iqual">
     </form></div>
     </div>
-    <div>
+    <div class="row">
     <div class="enFila col-4"><form>
         <label>Gènere:</label><br>
         <input type="radio" id="home" name="genere" value="home">
@@ -171,11 +168,17 @@
         <label for="musica">Música</label>
     </form></div>
     </div>
+    <div class="row">
     <div class="enFila col-12"><form>
         <label for="pAprovar">Probabilitat d'aprovar 0 - 100:</label><br>
-        <input class="col-11" type="range" id="pAprovar" name="pAprovar" min="0" max="100">
-        <input type="submit" value="Envia">
+        <input class="col-11" type="range" id="pAprovar" name="pAprovar" min="0" max="100"><br>
     </form></div>
+    </div>
+    <div class="row">
+        <div class="enFila col-1"><form>
+            <input type="submit" value="Envia">
+        </form></div>
+    </div>
 
 
 </div>
