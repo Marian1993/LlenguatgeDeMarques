@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <style>
+        div[class^="col-"]{
+            background-color: azure;
+            border: 1px solid lightgrey;
+        }
+
+        .dreta {
+            float: right;
+        }
+
+        select,input[type="text"],input[type="number"],input[type="search"]{
+            width: 100%;
+            padding: 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        .col-1 {width: 8.33%;}
+        .col-2 {width: 16.66%;}
+        .col-3 {width: 25%;}
+        .col-4 {width: 33.33%;}
+        .col-5 {width: 41.66%;}
+        .col-6 {width: 50%;}
+        .col-7 {width: 58.33%;}
+        .col-8 {width: 66.66%;}
+        .col-9 {width: 75%;}
+        .col-10 {width: 83.33%;}
+        .col-11 {width: 91.66%;}
+        .col-12 {width: 100%;}
+
+
+    </style>
+</head>
+<body>
+<div class="row">
+    <div class="col-5">col-5</div>
+    <div class="col-7">col-7</div>
+</div>
+<div class="row">
+    <div class="col-2">col-2</div>
+    <div class="col-5 dreta">col-5 dreta</div>
+</div>
+
+<div class="row">
+    <div class="col-4">
+        <label for="input1"></label>
+        <input type="text" id="input1" name="input1" placeholder="input1">
+    </div>
+    <div class="col-4">
+        <label for="input2"></label>
+        <input type="text" id="input2" name="input2" placeholder="input2">
+    </div>
+    <div class="col-4">
+        <label for="input3"></label>
+        <input type="number" id="input3" name="input3" placeholder="5">
+    </div>
+</div>
+<div class="row">
+    <div class="col-8 dreta"> col-8 dreta
+        <div class="row">
+            <div class="col-7">col-7 dins un col-8</div>
+            <div class="col-5">col-5 dins un col-8 i un select
+                <label for="input4"></label>
+                <select id="estudis" name="estudis">
+                    <option value="eso">Estudis Secundaris Obligatoris</option>
+                    <option value="batx">Batxillerat</option>
+                    <option value="cfgm">Cicle Formatiu Grau Mitjà</option>
+                    <option value="cfgs">Cicle Formatiu Grau Superior</option>
+                    <option value="uni">Estudis Universitaris</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
