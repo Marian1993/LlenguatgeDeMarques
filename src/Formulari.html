@@ -4,182 +4,202 @@
     <meta charset="UTF-8">
     <link href="css/Layout.css" rel="stylesheet">
     <title>Title</title>
-</head>
-<body>
-<style>
 
-  *{
-    box-sizing: border-box;
-  }
-  .principal{
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
-  ;
-  }
-  h2,h3{
-    margin-left: 1%;
-  }
-  .principal::after {
-    clear: both;
-    content: "";
-    display: table;
-  }
-  .parrafos{
-    float: left;
-    margin-bottom: 3%;
-    text-align: justify;
-  }
-  .enFila{
-    float: left;
-    margin-bottom: 1%;
-  }
 
-  input[type="submit"]{
+    <style>
 
-      border-style: solid;
-      border-color:  fuchsia;
-  }
-  input, label{
+    body{
+      font-family: Arial;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .principal{
+      box-shadow:  0 0 20px dodgerblue;
+      border-radius: 10px;
+      margin-top: 1%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+    h2,h3{
+      margin-left: 1%;
+      padding-top: 2%;
+    }
+    .principal::after {
+      clear: both;
+      content: "";
+      display: table;
+    }
+    .parrafos{
+      float: left;
+      text-align: justify;
+    }
+
+    input[type="submit"]{
+
+      border: 1px solid blue;
+      border-radius: 3px
+
+    }
+    input, select{
       width: 100%;
-  }
+      padding: 5px;
+    }
+    .exepcioInputGenere{
 
-  .row::after {
+      width: 4%;
+    }
+    .exepcioInputAficcions{
+
+      width: 2%;
+    }
+
+    .exepcionLabel{
+
+      margin-left: 4%;
+    }
+
+
+    .row::after {
       content: "";
       clear: both;
       display: table;
-  }
+    }
 
-  [class*="col-"] {
+    [class*="col-"] {
       float: left;
       padding: 15px;
-  }
+      margin-bottom: 0.75%;
+    }
 
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
 
-</style>
+  </style>
+</head>
+<body>
 
-<div class="principal col-10">
+
+<div class="principal">
 
     <h2>Secció principal de la pàgina</h2>
     <div class="row">
-    <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
-        montes ante mi tincidunt primis justo convallis,
-        et varius nec massa curabitur tristique pellentesque vitae,
-        tempor cum mauris nibh dapibus accumsan.
-        Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
-        sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
-        taciti nascetur donec id conubia cras dis lobortis.
-        Phasellus mus odio pellentesque luctus mauris ultrices a neque,
-        non class fermentum sollicitudin dignissim nec orci gravida,
-        nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
-    <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
-        montes ante mi tincidunt primis justo convallis,
-        et varius nec massa curabitur tristique pellentesque vitae,
-        tempor cum mauris nibh dapibus accumsan.
-        Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
-        sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
-        taciti nascetur donec id conubia cras dis lobortis.
-        Phasellus mus odio pellentesque luctus mauris ultrices a neque,
-        non class fermentum sollicitudin dignissim nec orci gravida,
-        nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
+        <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
+            montes ante mi tincidunt primis justo convallis,
+            et varius nec massa curabitur tristique pellentesque vitae,
+            tempor cum mauris nibh dapibus accumsan.
+            Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
+            sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
+            taciti nascetur donec id conubia cras dis lobortis.
+            Phasellus mus odio pellentesque luctus mauris ultrices a neque,
+            non class fermentum sollicitudin dignissim nec orci gravida,
+            nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
+        <div><p class="parrafos col-6">Lorem ipsum dolor sit amet consectetur adipiscing elit risus,
+            montes ante mi tincidunt primis justo convallis,
+            et varius nec massa curabitur tristique pellentesque vitae,
+            tempor cum mauris nibh dapibus accumsan.
+            Quisque habitant blandit elementum condimentum bibendum magnis sed sem massa,
+            sodales nunc auctor tristique vitae arcu habitasse imperdiet mauris,
+            taciti nascetur donec id conubia cras dis lobortis.
+            Phasellus mus odio pellentesque luctus mauris ultrices a neque,
+            non class fermentum sollicitudin dignissim nec orci gravida,
+            nostra rutrum conubia eros suspendisse varius facilisi.</p></div>
     </div>
 
     <h3>Formulari</h3>
 
     <div class="row">
-        <div class="enFila col-4"><form>
+        <div class="col-4"><form>
             <label for="dni">DNI:</label><br>
             <input type="text" id="dni"name="dni" value="98765432X">
         </form></div>
-        <div class="enFila col-8"><form>
+        <div class="col-8"><form>
             <label for="correu">Correu electrònic:</label><br>
             <input type="email" id="correu" name="correu" value="pacocastanyes@gmail.com">
         </form></div>
     </div>
     <div class="row">
-    <div class="enFila col-4"><form>
-        <label for="pnom">Nom:</label><br>
-        <input type="text" id="pnom" name="pnom" value="Fulano">
-    </form></div>
-    <div class="enFila col-4"><form>
-        <label for="l1">Llinatge 1:</label><br>
-        <input type="text" id="l1" name="l1" value="Detal">
-    </form></div>
-    <div class="enFila col-4"><form>
-        <label for="l2">Llinatge 2:</label><br>
-        <input type="text" id="l2" name="l2" value="Iqual">
-    </form></div>
+        <div class="col-4"><form>
+            <label for="pnom">Nom:</label><br>
+            <input type="text" id="pnom" name="pnom" value="Fulano">
+        </form></div>
+        <div class="col-4"><form>
+            <label for="l1">Llinatge 1:</label><br>
+            <input type="text" id="l1" name="l1" value="Detal">
+        </form></div>
+        <div class=" col-4"><form>
+            <label for="l2">Llinatge 2:</label><br>
+            <input type="text" id="l2" name="l2" value="Iqual">
+        </form></div>
     </div>
     <div class="row">
-    <div class="enFila col-4"><form>
-        <label>Gènere:</label><br>
-        <input type="radio" id="home" name="genere" value="home">
-        <label for="home">Home</label>
-        <input type="radio" id="dona" name="genere" value="dona">
-        <label for="dona">Dona</label>
-        <input type="radio" id="altres" name="genere" value="altres">
-        <label for="altres">Altres</label>
-    </form></div>
-    <div class="enFila col-4"><form>
-        <label for="fNaixement">Data Naixement</label><br>
-        <input type="date" id="fNaixement" name="fNaixement" min="1950-01-01"><br>
-    </form></div>
+        <div class="col-4"><form>
+            <label>Gènere:</label><br>
+            <input class="exepcioInputGenere" type="radio" id="home" name="genere" value="home">
+            <label for="home">Home</label>
+            <input class="exepcioInputGenere" type="radio" id="dona" name="genere" value="dona">
+            <label for="dona">Dona</label>
+            <input class="exepcioInputGenere" type="radio" id="altres" name="genere" value="altres">
+            <label for="altres">Altres</label>
+        </form></div>
+        <div class="col-4"><form>
+            <label for="fNaixement">Data Naixement</label><br>
+            <input type="date" id="fNaixement" name="fNaixement" min="1950-01-01"><br>
+        </form></div>
     </div>
     <div class="row">
-    <div class="enFila col-4"><form>
-        <label for="nEstudis">Nivell d'estudis:</label><br>
-        <select class="col-12" id="nEstudis" name="nestudis">
-            <option value="eso">ESO</option>
-            <option value="batxillerat">Batxillerat</option>
-            <option value="gMitja">Grau Mitja</option>
-            <option value="gSuperior">Grau Superior</option>
-            <option value="universitat">Universitat</option>
-        </select>
-    </form></div>
-    <div class="enFila col-8"><form>
-        <label>Aficcions:</label><br>
-        <input type="checkbox" id="surf" name="surf" value="Surf">
-        <label for="surf">Surf</label>
-        <input type="checkbox" id="escacs" name="escacs" value="Escacs">
-        <label for="escacs">Escacs</label>
-        <input type="checkbox" id="basket" name="basket" value="Basket">
-        <label for="basket">Basket</label>
-        <input type="checkbox" id="e-sports" name="e-sports" value="E-sports">
-        <label for="e-sports">E-sports</label>
-        <input type="checkbox" id="dormir" name="dormir" value="Dormir">
-        <label for="dormir">Dormir</label>
-        <input type="checkbox" id="legir" name="llegir" value="Llegir">
-        <label for="legir">Llegir</label>
-        <input type="checkbox" id="dibuixar" name="dibuixar" value="Dibuixar">
-        <label for="dibuixar">Dibuixar</label>
-        <input type="checkbox" id="musica" name="musica" value="Música">
-        <label for="musica">Música</label>
-    </form></div>
+        <div class="col-4"><form>
+            <label for="nEstudis">Nivell d'estudis:</label><br>
+            <select id="nEstudis" name="nestudis">
+                <option value="eso">ESO</option>
+                <option value="batxillerat">Batxillerat</option>
+                <option value="gMitja">Grau Mitja</option>
+                <option value="gSuperior">Grau Superior</option>
+                <option value="universitat">Universitat</option>
+            </select>
+        </form></div>
+        <div class="col-8"><form>
+            <label>Aficcions:</label><br>
+            <input class="exepcioInputAficcions" type="checkbox" id="surf" name="surf" value="Surf">
+            <label for="surf">Surf</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="escacs" name="escacs" value="Escacs">
+            <label for="escacs">Escacs</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="basket" name="basket" value="Basket">
+            <label for="basket">Basket</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="e-sports" name="e-sports" value="E-sports">
+            <label for="e-sports">E-sports</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="dormir" name="dormir" value="Dormir">
+            <label for="dormir">Dormir</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="legir" name="llegir" value="Llegir">
+            <label for="legir">Llegir</label><br>
+            <input class="exepcioInputAficcions" type="checkbox" id="dibuixar" name="dibuixar" value="Dibuixar">
+            <label for="dibuixar">Dibuixar</label>
+            <input class="exepcioInputAficcions exepcionLabel" type="checkbox" id="musica" name="musica" value="Música">
+            <label for="musica">Música</label>
+        </form></div>
     </div>
     <div class="row">
-    <div class="enFila col-12"><form>
-        <label for="pAprovar">Probabilitat d'aprovar 0 - 100:</label><br>
-        <input class="col-11" type="range" id="pAprovar" name="pAprovar" min="0" max="100"><br>
-    </form></div>
+        <div class="col-12"><form>
+            <label for="pAprovar">Probabilitat d'aprovar 0 - 100:</label><br>
+            <input class="col-12" type="range" id="pAprovar" name="pAprovar" min="0" max="100"><br>
+        </form></div>
     </div>
     <div class="row">
-        <div class="enFila col-1"><form>
+        <div class="col-1"><form>
             <input type="submit" value="Envia">
         </form></div>
     </div>
-
 
 </div>
 
