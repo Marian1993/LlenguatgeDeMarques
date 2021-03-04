@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>iFrame</title>
+
+    <style>
+    body{
+      font-family: Arial;
+      background-color: azure;
+    }
+    *{
+      box-sizing: border-box;
+    }
+    .principal{
+      box-shadow:  0 0 15px black;
+      border-radius: 10px;
+      margin-top: 1%;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
+      background-color: white;
+    }
+    h1{
+      padding-top: 3%;
+      padding-bottom: 5%;
+    }
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    p{
+      float: left;
+      box-shadow: 1px 2px darkgray;
+      border-radius: 3px;
+      border: 1px solid darkgray;
+      margin-left: 1%;
+      font-size: small;
+    }
+    iframe{
+      float: right;
+      border-radius: 5px;
+      margin-right: 1%;
+
+      box-shadow: 2px 1px 5px black;
+    }
+
+    [class*="col-"] {
+      padding: 5px;
+      margin-bottom: 0.75%;
+    }
+
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+
+
+
+  </style>
+</head>
+
+<body>
+<div class="principal"><h1 align="center">Les meves webs</h1>
+
+    <div class="row">
+        <p class="col-3"><a href="Ranking.html" target="Deures">Ranking de llenguatges</a></p>
+        <iframe class="col-8" src="http://www.iesmanacor.cat/" height="700px" name="Deures"></iframe>
+        <p class="col-3"><a href="ExerciciDiv1.html" target="Deures">Exercici DIV</a></p>
+        <p class="col-3"><a href="Formulari2.html" target="Deures">DIV + Form</a></p>
+    </div>
+
+</div>
+</body>
+</html>
